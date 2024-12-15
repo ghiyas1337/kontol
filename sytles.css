@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+#faceContainer {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#faceImage {
+    width: 200px; /* Atur ukuran gambar sesuai kebutuhan */
+    height: auto;
+    border-radius: 50%; /* Membuat gambar menjadi bulat */
+}
