@@ -58,8 +58,8 @@ function createParticle(x, y, isSparkle) {
 	if (!isSparkle) {
 			const img = document.createElement("img");
 			img.src = imageUrls[Math.floor(Math.random() * imageUrls.length)];
-			img.style.width = "30px";
-			img.style.height = "30px";
+			img.style.width = "70px";
+			img.style.height = "70px";
 			el.appendChild(img);
 	} else {
 			el.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
