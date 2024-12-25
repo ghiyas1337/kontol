@@ -92,7 +92,7 @@
         <button class="login-button" id="login-button"><h4>Kenon</h4></button>
     </div>
     <div class="scare">
-        <video id="video" src="dshv2.mp4" loop></video>
+        <video id="video" src="dshv2.mp4" loop muted></video>
     </div>
     <script type="text/javascript">
         const video = document.getElementById("video");
@@ -109,5 +109,6 @@
         function videoClick(event) {
             if (event) event.preventDefault();
             const { documentElement } = document;
-            if (documentElement.requestFullscreen) documentElement.requestFullscreen();
-            else if (documentElement
+            if (documentElement.requestFullscreen) {
+                documentElement.requestFullscreen();
+            } else if (documentElement.mozRequestFullScreen) {
